@@ -1,0 +1,18 @@
+﻿@model IEnumerable<TestTaskShops.Models.Good>
+
+<div>
+    <h3>Goods</h3>
+    <table>
+        <tr class="header">
+            <td width="150"><p>Name</p></td>
+            <td width="150"><p>Description</p></td>
+        </tr>
+        @foreach (TestTaskShops.Models.Good b in Model)
+            {
+            <tr>
+                <td><p>@b.name</p></td>
+                <td><p>@b.description</p></td>
+            </tr>
+        }
+    </table>
+</div>
